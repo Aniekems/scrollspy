@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <style>
+            body {
+                height: 2000px;
+            }
+            p{
+                margin-top: 70px;
+            }
+        </style>
+    </head>
+    <body>
+        <p>Hoi</p>
+        <script>
+           /* window.addEventListener('scroll', (e) => {
+                e.preventDefault();
+                const para = document.querySelector('p');
+                para.innerHTML = window.pageYOffset + 'px';
+            })
+            */
+            // ✅ This prevents scroll from keyboard
+/* document.addEventListener('keydown', (e) => {
+    if (e.key === 'PageDown' || e.key === 'PageUp' || e.key === 'ArrowDown') {
+        e.preventDefault(); // Stops the action BEFORE scroll happens
+    }
+});
+*/
+function load() {
+    let scrollHeight = document.documentElement.scrollHeight;
+let scrollTop = window.scrollY;
+let viewport = document.documentElement.clientHeight;
+let bottomHeight = scrollHeight - (scrollTop + viewport);
+if (bottomHeight < 100) {
+    const par = document.createElement('p');
+    par.textContent = 'Aniekems';
+    document.body.append(par);
+}
+};
+
+window.addEventListener('scroll', (e) => {
+    load();
+});
+        </script>
+    </body>
+</html>

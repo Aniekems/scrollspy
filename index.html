@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <style>
+            body {
+                height: 1000px;
+            }
+            div {
+                height: 700px;
+                width: 300px;
+            
+                overflow-y: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <div style="height: 701px; background-color: aquamarine; width: 286px">Hoi</div>
+        </div>
+        <script>
+            const div = document.querySelector('div');
+            div.addEventListener('scroll', (e) => {
+                console.log('Mr Eti Ema')
+            })
+            window.addEventListener('scroll', (e) => {
+                console.log('Aniekems')
+            })
+        </script>
+    </body>
+</html>
