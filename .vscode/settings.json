@@ -2,5 +2,5 @@
   "editor.cursorStyle": "line",
   "editor.cursorWidth": 1,
   "editor.cursorBlinking": "blink",
-  "editor.cursorSmoothCaretAnimation": false
+  "editor.cursorSmoothCaretAnimation": "off"
 }
